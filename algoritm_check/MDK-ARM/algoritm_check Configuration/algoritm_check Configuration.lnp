@@ -1,0 +1,23 @@
+--cpu Cortex-M4.fp
+"algoritm_check configuration\stm32f4xx_hal_gpio.o"
+"algoritm_check configuration\stm32f4xx_hal_dma_ex.o"
+"algoritm_check configuration\stm32f4xx_hal_cortex.o"
+"algoritm_check configuration\stm32f4xx_hal_flash_ramfunc.o"
+"algoritm_check configuration\stm32f4xx_hal_pwr.o"
+"algoritm_check configuration\stm32f4xx_hal_pwr_ex.o"
+"algoritm_check configuration\stm32f4xx_hal.o"
+"algoritm_check configuration\stm32f4xx_hal_rcc.o"
+"algoritm_check configuration\stm32f4xx_hal_dma.o"
+"algoritm_check configuration\stm32f4xx_hal_flash_ex.o"
+"algoritm_check configuration\stm32f4xx_hal_rcc_ex.o"
+"algoritm_check configuration\stm32f4xx_hal_flash.o"
+"algoritm_check configuration\startup_stm32f429xx.o"
+"algoritm_check configuration\system_stm32f4xx.o"
+"algoritm_check configuration\stm32f4xx_hal_msp.o"
+"algoritm_check configuration\gpio.o"
+"algoritm_check configuration\main.o"
+"algoritm_check configuration\stm32f4xx_it.o"
+--library_type=microlib --strict --scatter "algoritm_check Configuration\algoritm_check Configuration.sct"
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "algoritm_check Configuration.map" -o "algoritm_check Configuration\algoritm_check Configuration.axf"
